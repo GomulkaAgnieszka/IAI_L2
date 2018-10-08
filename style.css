@@ -1,5 +1,20 @@
-body
-{
+body {
     background: deeppink;
+color: blue;
+}
 
+ul > li {
+    display: inline;
+
+}
+
+.nav
+{
+
+
+}
+ul
+{
+background: black;
+    color: white;
 }
