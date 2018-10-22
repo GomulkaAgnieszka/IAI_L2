@@ -54,3 +54,13 @@ a
 {
 	padding: 0;
 }
+a
+{
+	background-color: indigo;
+	color: crimson;
+	transition: all 0.5s;
+}
+a:hover{
+	background-color: lightpink;
+	color: mediumspringgreen;
+}
