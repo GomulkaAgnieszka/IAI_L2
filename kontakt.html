@@ -1,82 +1,82 @@
-git <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pl">
 <head>
 	<meta charset="UTF-8">
-    <title>Formularz </title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <title>Formularz </title>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
-<nav>
-  <ul>
-      <li><a href="index.html">pierwszy element</a></li>
-      <li> drugi element </li>
-      <li> trzeci element </li>
-  </ul>
-</nav>
-<div class="container-fluid">
-	
-<form>
-	<fieldset> 
-	
-	<legend> Uzupełnij formularz </legend>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Imię</label>
-    <input type="text" class="form-control" id="InputName" aria-describedby="NameHelp" placeholder="Wpisz imię">
+  <nav>
+    <ul class="nav">
+        <li><a href="index.html">Strona Główna</a></li>
+        <li><a href="map.html">Mapa</a></li>
+    </ul>
+  </nav>
+
+  <div class="container-fluid">
+  	
+    <form>
+    	<fieldset> 
+    	
+    	<legend> Uzupełnij formularz </legend>
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Imię</label>
+        <input type="text" class="form-control" id="InputName" aria-describedby="NameHelp" placeholder="Wpisz imię">
+      </div>
+
+      <div class="form-group">
+        <label for="InputSurname">Nazwisko</label>
+        <input type="text" class="form-control" id="InputSurame" placeholder="Wpisz nazwisko">
+      </div>
+
+      <div class="form-group">
+        <label for="InputEmail">E-mail</label>
+        <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Wpisz email">
+      </div>
+
+
+      <div class="form-check form-check-inline">
+        <label>Płeć</label>
+      </div><br>
+      <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1">Mężczyzna</label>
+      </div>
+      <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2">Kobieta</label>
+      </div>
+
+      <div class="form-group">
+      	<label for="FormControlTextarea">Opis</label>
+        <textarea class="form-control" id="FormControlTextarea" cols="5" rows="1"></textarea>
+      </div>
+
+      <div class="form-check number">
+        <label for="Number">Wiek</label>
+        <input type="number" class="form-check" id="Number" value="18">
+      </div>
+
+      <div class="form-group col-4">
+        <label for="CivilStatus">StanCywilny</label>
+        <select id="CivilStatus" class="form-control">
+          <option value="1">Panna/Kawaler</option>
+          <option value="2">Zamężna/Żonaty</option>
+          <option value="3">Rozwiedziona/y</option>
+      </select>
+      </div>
+        
+      <input type="submit" value="WYŚLIJ" />
+      <input type="reset" value="WYCZYŚĆ" />
+      </fieldset>
+    </form>
+
   </div>
-  <div class="form-group">
-    <label for="InputSurname">Nazwisko</label>
-    <input type="text" class="form-control" id="InputSurame" placeholder="Wpisz nazwisko">
-  </div>
-  <div class="form-group">
-    <label for="InputEmail">E-mail</label>
-    <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Wpisz email">
-    </div>
-
-<div class="form-check">
-	<label for="examplePlec">Płeć</label> <br>
-  <input class="form-check-input" type="radio" name="Radio1" id="Radios1" value="option1" checked>
-  <label class="form-check-label" for="Radios1">
-    Kobieta
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="Radio2" id="Radios2" value="option2">
-  <label class="form-check-label" for="Radios2">
-    Mężczyzna
-  </label>
-</div>
-
-<div class="form-group">
-	<label for="FormControlTextarea">Opis</label>
-<textarea class="form-control" id="FormControlTextarea" cols="5" rows="1"></textarea>
-</div>
-
-<div class="form-check number">
-<label for="Number">Wiek</label>
-<input type="number" class="form-check" id="Number" value="18">
-</div>
-
-  <label class="MaritalStatus" for="SelectMaritalStatus">Stan cywilny</label>
-  <select class="custom-select MaritalStatus" id="SelectMaritalStatus">
-    
-    <option value="1">Panna/Kawaler</option>
-    <option value="2">Zamężna/Żonaty</option>
-    <option value="3">Rozwiedziona/y</option>
-  </select>
- 
-<input type="submit" value="WYŚLIJ" />
-<input type="reset" value="WYCZYŚĆ" />
-</div>
-
-
-</fieldset>
-</form>
-
-
-
 </body>
 </html>
 
